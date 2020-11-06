@@ -10,18 +10,18 @@ function Getbooking() {
     .then(json => {
 
      // console.log(json.bookings);
-      var bookings = document.getElementById("booking-list");
+      var booking = document.getElementById("booking-list");
       var bookingIds = [];
 
-      for (var i = 0; i < json.bookings.length; i++) {
-        var gId = json.bookings[i].id;
-        var gName = json.bookings[i].name;
-        var gEmail = json.bookings[i].email;
-        var gPax = json.bookings[i].pax;
-        var gRemarks = json.bookings[i].remarks;
+      for (var i = 0; i < json.booking.length; i++) {
+        var gId = json.booking[i].id;
+        var gName = json.booking[i].name;
+        var gEmail = json.booking[i].email;
+        var gPax = json.booking[i].pax;
+        var gRemarks = json.booking[i].remarks;
         var buttonId = "delete" + gId;
         
-        let row = bookings.insertRow(bookings.rows.length);
+        let row = bookings.insertRow(booking.rows.length);
         row.insertCell(0).innerHTML = gId;
         row.insertCell(1).innerHTML = gName;
         row.insertCell(2).innerHTML = gEmail;

@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #52b788;
+}
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.jumbotron h1 {
+    text-shadow:2px 2px #52b788;
+}
+
+.jumbotron p{
+    text-shadow:2px 2px #52b788;
+}
+
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.jumbotron .container {
+    z-index: 2;
+    position: relative;
+
+}

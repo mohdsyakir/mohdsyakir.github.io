@@ -14,10 +14,10 @@ function Getbooking() {
       var bookingIds = [];
 
       for (var i = 0; i < json.bookings.length; i++) {
+        var gId = json.bookings[i].id;
         var gName = json.bookings[i].name;
         var gEmail = json.bookings[i].email;
         var gPax = json.bookings[i].pax;
-        var gId = json.bookings[i].id;
         var gRemarks = json.bookings[i].remarks;
         var buttonId = "delete" + gId;
         
@@ -50,7 +50,7 @@ function Getbooking() {
   function DeleteBooking(id) {
 
     if(confirm("Are you sure you want to delete?")) {  
-      let url = 'https://api.sheety.co/7b082e81fa04098c0e0bfe8408decc01/bookingApp/bookings/' + id;
+      let url = 'https://api.sheety.co/2f060e3135104e13a7e97f99301da07b/webDevBooking/booking' + id;
       fetch(url, {
         method: 'DELETE',
       })

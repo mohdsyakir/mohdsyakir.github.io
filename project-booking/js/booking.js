@@ -1,5 +1,5 @@
 function BookNow(guestName,guestEmail,guestPax,guestRemarks) {
-    let url = 'https://api.sheety.co/7b082e81fa04098c0e0bfe8408decc01/bookingApp/bookings';
+    let url = 'https://api.sheety.co/2f060e3135104e13a7e97f99301da07b/webDevBooking/booking';
     let body = {
         booking: {
             name: guestName,
@@ -19,14 +19,14 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks) {
     .then(json => {
     // Do something with object
         console.log(json.booking);
-        alert(json.booking.name + " sucessfully added!");
+        alert(json.booking.name + " booking was sucessfully added!");
         
   });
 }
 
 window.addEventListener("load", function() {
 
-    document.getElementById("bookNow").addEventListener("click", function(){
+    document.getElementById("bookNowBtn").addEventListener("click", function(){
         let name = document.getElementById("guestName").value;
         let email = document.getElementById("guestEmail").value;
         let pax = document.getElementById("guestPax").value;

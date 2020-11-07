@@ -50,7 +50,7 @@ function Getbooking() {
   function DeleteBooking(id) {
 
     if(confirm("Are you sure you want to delete?")) {  
-      let url = 'https://api.sheety.co/2f060e3135104e13a7e97f99301da07b/webDevBooking/booking' + id;
+      let url = 'https://api.sheety.co/2f060e3135104e13a7e97f99301da07b/webDevBooking/booking/' + id;
       fetch(url, {
         method: 'DELETE',
       })

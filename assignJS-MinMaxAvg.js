@@ -1,3 +1,6 @@
+//same content at:
+//1. https://codepen.io/syakir/pen/QWEZLGb
+//2. https://github.com/mohdsyakir/mohdsyakir.github.io
 function getMinMaxAvg (arr) {
  var min;
  for (i=0; i<arr.length; i++) {
@@ -26,7 +29,6 @@ var avg = 0 ;
   avg += arr[i];
   }
   avg = avg/arr.length;
-
 return [min, max, avg];
 }
 

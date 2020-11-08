@@ -1,3 +1,6 @@
+//same content at:
+//1. https://codepen.io/syakir/pen/QWEZLGb
+//2. https://github.com/mohdsyakir/mohdsyakir.github.io
 var temp = "";
 var isEvenRow = false;
 var isEvenCol = false;
